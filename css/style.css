@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #0f0f0f;
+    --cor-fundo-card: #1c1c1c;
+    --cor-principal: #ff1f2d;
+    --cor-principal-escura: #c4121d;
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #b3b3b3;
+    --fonte-titulo: 'Bebas Neue', sans-serif;
+    --fonte-texto: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+}
+
+header img {
+    width: 60px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-principal);
+}
+
+nav {
+    margin-left: auto;
+}
+
+section {
+    padding: 80px 40px;
+}
+
+.produtos {
+    display: flex;
+    gap: 30px;
+}
+
+.produtos img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.produtos article {
+    flex: 1;
+    text-align: center;
+}
+
+.produtos h3 {
+    margin: 20px 0 5px;
+}
+
+.botao {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--cor-principal-escura);
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagens/chuteira1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 72px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: var(--cor-texto-secundario);
+}
+
+.passos {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 25px 0;
+}
+
+.passos li {
+    flex: 1;
+    background-color: var(--cor-fundo-card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.passos i {
+    font-size: 32px;
+    color: var(--cor-principal);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contatos {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contatos a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contatos i {
+    color: var(--cor-principal);
+    margin-right: 8px;
+}
+
+.contatos a:hover {
+    color: var(--cor-principal);
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    border-top: 1px solid var(--cor-fundo-card);
+}
+
+footer p {
+    margin: 5px 0;
+}
