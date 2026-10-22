@@ -177,3 +177,72 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+.paleta {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.amostra {
+    text-align: center;
+}
+
+.cor {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    margin: 0 auto 10px;
+}
+
+.cor-fundo {
+    background-color: var(--cor-fundo);
+}
+
+.cor-fundo-card {
+    background-color: var(--cor-fundo-card);
+}
+
+.cor-principal {
+    background-color: var(--cor-principal);
+}
+
+.cor-principal-escura {
+    background-color: var(--cor-principal-escura);
+}
+
+.cor-texto {
+    background-color: var(--cor-texto);
+}
+
+.cor-texto-secundario {
+    background-color: var(--cor-texto-secundario);
+}
+
+.fonte {
+    margin-bottom: 40px;
+}
+
+.legenda {
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.exemplo-titulo {
+    font-size: 48px;
+}
+
+.exemplo-card {
+    max-width: 300px;
+}
+
+footer a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor-principal);
+}
